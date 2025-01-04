@@ -10,7 +10,7 @@ public class HomePageTests extends TestBase { // наследник класса
         //driver.findElement(By.xpath("//h1[text()='Home Component']")); //поиск по текстовому локатору
         //isHomeComponentPresent(); // или System.out/println ("Home Component" +isHomeComponentPresent()); чтобы проверить точно, что он есть
         //System.out.println("Home Component is" + isElementPresent (By.xpath("//h1[contains(.,'Home Component')]")));
-        Assert.assertTrue(isHomeComponentPresent()); //класс, который сравнивает ожидаемый и действительный результаты, ожидается один локатор, а получается либо правильный , либо нет
+        Assert.assertTrue(app.getHomaPage().isHomeComponentPresent()); //класс, который сравнивает ожидаемый и действительный результаты, ожидается один локатор, а получается либо правильный , либо нет
     }
 
 
